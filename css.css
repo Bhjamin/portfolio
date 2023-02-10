@@ -1,7 +1,47 @@
-header {
-
+body {
+    background-color: bisque;
 }
 
-body {
-    background-image: url('./background.jpg');
+.slit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.slit svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 66px;
+    transform: rotateY(180deg);
+}
+
+.slit .shape-fill {
+    fill: #561643;
+}
+
+.bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -1;
+}
+
+.bubbles svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 115px;
+    transform: rotateY(180deg);
+}
+
+.bubbles .shape-fill {
+    fill: #FF7700;
 }
