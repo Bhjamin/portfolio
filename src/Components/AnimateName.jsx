@@ -3,9 +3,11 @@ import { AnimatePresence, easeIn, motion } from "framer-motion";
 const AnimateName = () => {
 
     return(
+      <div className="">
+
         <AnimatePresence>
     <motion.div  className="flex flex-col w-[calc(100%-100px)]" animate={{ x: 25, y: 20 }} transition={{duration: .5, ease: 'easeOut'}} initial={true} >
-      <h1 className=" text-4xl font-extrabold">Ben Hancock</h1>
+      <h1 className=" text-4xl font-extrabold w-56 ">Ben Hancock</h1>
     </motion.div>
     <br/>
     <br/>
@@ -20,8 +22,8 @@ const AnimateName = () => {
     </motion.div>
 
 
-
       </AnimatePresence>
+      </div>
     )
 }
 
