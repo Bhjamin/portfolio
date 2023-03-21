@@ -6,7 +6,7 @@ const AnimateName = () => {
       <div className="">
 
         <AnimatePresence>
-    <motion.div  className="flex flex-col w-[calc(100%-100px)]" animate={{ x: 25, y: 20 }} transition={{duration: .5, ease: 'easeOut'}} initial={true} >
+    <motion.div  className="flex flex-col w-[calc(100%-100px)]" animate={{ x: 25, y: 20, opacity: 1 }} transition={{duration: 1, ease: 'easeOut'}} initial={{opacity: 0}} >
       <h1 className=" text-4xl font-extrabold w-56 ">Ben Hancock</h1>
     </motion.div>
     <br/>
