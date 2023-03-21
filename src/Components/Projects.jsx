@@ -11,7 +11,7 @@ const Projects = () => {
           My first project:
             <a
               href="https://foundationscapstonebhjamin.netlify.app/"
-              target="_blank"
+              target="_blank" rel="noreferrer"
             >
           <button className="btn btn-outline btn-accent rounded-md m-2">
               
