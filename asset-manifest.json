@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Bhjamin.github.io/static/css/main.99dd6286.css",
+    "main.js": "/Bhjamin.github.io/static/js/main.13c73864.js",
+    "index.html": "/Bhjamin.github.io/index.html",
+    "main.99dd6286.css.map": "/Bhjamin.github.io/static/css/main.99dd6286.css.map",
+    "main.13c73864.js.map": "/Bhjamin.github.io/static/js/main.13c73864.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.99dd6286.css",
+    "static/js/main.13c73864.js"
+  ]
+}
