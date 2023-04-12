@@ -15,7 +15,7 @@ const Projects = () => {
           Monopoly Style Board Game
         </h3>
         <br />
-        <img className=" max-h-40 lg:max-h-60 rounded-lg" src={picture1} />
+        <img className=" max-h-40 lg:max-h-60 rounded-lg" src={picture1} alt="Homepage of my first website" />
         <br />
         <p className=" text-base text-center lg:text-xl text-warning">
           This was my first big project that I built by myself. The only
@@ -44,7 +44,7 @@ const Projects = () => {
           Mood Mate
         </h3>
         <br />
-        <img className=" max-h-40 lg:max-h-60 rounded-lg" src={MoodMatePicture} />
+        <img className=" max-h-40 lg:max-h-60 rounded-lg" src={MoodMatePicture} alt="Homepage for the mood mate website" />
         <br />
         <p className="text-base text-center lg:text-xl text-warning">
           Mood Mate was my second big project that I built by myself. It is a full-stack mental health web app that was built with React, Tailwind CSS, and DaisyUI for the front end. I utilized bit.io for the database and axios to communicate and make requests to the database. 

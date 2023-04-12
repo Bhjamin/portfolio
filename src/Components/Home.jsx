@@ -21,7 +21,7 @@ const Home = () => {
     }, 3000);
 
     return () => clearInterval(intervalId);
-  }, []);
+  }, [pics.length]);
 
   const pics = [girlAndBeng, girlPic, bengPic];
 
