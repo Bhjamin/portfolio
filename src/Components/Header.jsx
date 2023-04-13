@@ -15,6 +15,13 @@ const Header = () => {
     window.scrollTo({top: yOffset - headerHeight, behavior: 'smooth'});
   }
 
+  const scrollToExperiences = () => {
+    const projectsSection = document.getElementById('experiences');
+    const headerHeight = document.querySelector('header').offsetHeight;
+    const yOffset = projectsSection.getBoundingClientRect().top + window.pageYOffset;
+    window.scrollTo({top: yOffset - headerHeight, behavior: 'smooth'});
+  }
+
   return (
     <header className="h-30 lg:h-[150px] flex items-center max-md:justify-center lg:justify-start sticky top-0 z-10 p-4 bg-base-100">
       <div className="flex flex-col lg:flex-row lg:justify-between lg:pr-16 w-full items-center">
@@ -49,15 +56,21 @@ const Header = () => {
         <div className=" w-full lg:w-1/2 flex gap-10 justify-center lg:gap-20 lg:justify-end lg:pr-16">
           <button
             onClick={scrollToProjects}
-            className="btn btn-accent md:w-1/2 lg:w-1/5"
+            className="btn btn-accent btn-sm lg:btn-md"
           >
             Projects
           </button>
           <button
             onClick={scrollToAbout}
-            className="btn btn-secondary md:w-1/2 lg:w-1/5"
+            className="btn btn-secondary btn-sm lg:btn-md"
           >
             About
+          </button>
+          <button
+            onClick={scrollToExperiences}
+            className="btn btn-primary btn-sm lg:btn-md"
+          >
+          Experiences
           </button>
         </div>
       </div>
