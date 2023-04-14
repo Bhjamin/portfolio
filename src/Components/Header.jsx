@@ -2,25 +2,28 @@ import { motion } from "framer-motion";
 
 const Header = () => {
   const scrollToAbout = () => {
-    const aboutSection = document.getElementById('about');
-    const headerHeight = document.querySelector('header').offsetHeight;
-    const yOffset = aboutSection.getBoundingClientRect().top + window.pageYOffset;
-    window.scrollTo({top: yOffset - headerHeight, behavior: 'smooth'});
-  }
+    const aboutSection = document.getElementById("about");
+    const headerHeight = document.querySelector("header").offsetHeight;
+    const yOffset =
+      aboutSection.getBoundingClientRect().top + window.pageYOffset;
+    window.scrollTo({ top: yOffset - headerHeight, behavior: "smooth" });
+  };
 
   const scrollToProjects = () => {
-    const projectsSection = document.getElementById('projects');
-    const headerHeight = document.querySelector('header').offsetHeight;
-    const yOffset = projectsSection.getBoundingClientRect().top + window.pageYOffset;
-    window.scrollTo({top: yOffset - headerHeight, behavior: 'smooth'});
-  }
+    const projectsSection = document.getElementById("projects");
+    const headerHeight = document.querySelector("header").offsetHeight;
+    const yOffset =
+      projectsSection.getBoundingClientRect().top + window.pageYOffset;
+    window.scrollTo({ top: yOffset - headerHeight, behavior: "smooth" });
+  };
 
   const scrollToExperiences = () => {
-    const projectsSection = document.getElementById('experiences');
-    const headerHeight = document.querySelector('header').offsetHeight;
-    const yOffset = projectsSection.getBoundingClientRect().top + window.pageYOffset;
-    window.scrollTo({top: yOffset - headerHeight, behavior: 'smooth'});
-  }
+    const projectsSection = document.getElementById("experiences");
+    const headerHeight = document.querySelector("header").offsetHeight;
+    const yOffset =
+      projectsSection.getBoundingClientRect().top + window.pageYOffset;
+    window.scrollTo({ top: yOffset - headerHeight, behavior: "smooth" });
+  };
 
   return (
     <header className="h-30 lg:h-[150px] flex items-center max-md:justify-center lg:justify-start sticky top-0 z-10 p-4 bg-base-100">
@@ -70,7 +73,7 @@ const Header = () => {
             onClick={scrollToExperiences}
             className="btn btn-primary btn-sm lg:btn-md"
           >
-          Experiences
+            Experiences
           </button>
         </div>
       </div>
