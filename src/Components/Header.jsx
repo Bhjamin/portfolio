@@ -25,8 +25,16 @@ const Header = () => {
     window.scrollTo({ top: yOffset - headerHeight, behavior: "smooth" });
   };
 
+  const scrollToCareer = () => {
+    const projectsSection = document.getElementById("career");
+    const headerHeight = document.querySelector("header").offsetHeight;
+    const yOffset =
+      projectsSection.getBoundingClientRect().top + window.pageYOffset;
+    window.scrollTo({ top: yOffset - headerHeight, behavior: "smooth" });
+  };
+
   return (
-    <header className="h-30 lg:h-[150px] flex items-center max-md:justify-center lg:justify-start sticky top-0 z-10 p-4 bg-base-100">
+    <header className=" h-36 lg:h-[150px] flex items-center max-md:justify-center lg:justify-start sticky top-0 z-10 p-4 bg-base-100">
       <div className="flex flex-col lg:flex-row lg:justify-between lg:pr-16 w-full items-center">
         <div className=" p-2 flex flex-col">
           <motion.div
@@ -56,22 +64,28 @@ const Header = () => {
             </h1>
           </motion.div>
         </div>
-        <div className=" w-full lg:w-1/2 flex gap-10 justify-center lg:gap-20 lg:justify-end lg:pr-16">
-          <button
-            onClick={scrollToProjects}
-            className="btn btn-accent btn-sm lg:btn-md"
-          >
-            Projects
-          </button>
+        <div className=" w-full lg:w-1/2 flex gap-3 justify-center lg:gap-10 lg:justify-end lg:pr-10">
           <button
             onClick={scrollToAbout}
-            className="btn btn-secondary btn-sm lg:btn-md"
+            className="btn btn-secondary btn-xs lg:btn-md"
           >
             About
           </button>
           <button
+            onClick={scrollToProjects}
+            className="btn btn-accent btn-xs lg:btn-md"
+          >
+            Projects
+          </button>
+          <button
+            onClick={scrollToCareer}
+            className="btn btn-primary btn-xs lg:btn-md"
+          >
+            Career
+          </button>
+          <button
             onClick={scrollToExperiences}
-            className="btn btn-primary btn-sm lg:btn-md"
+            className="btn btn-secondary btn-xs lg:btn-md"
           >
             Experiences
           </button>

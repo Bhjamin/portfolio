@@ -5,7 +5,7 @@ import MoodMatePicture from "../Pictures/MoodMatePicture.png";
 const Projects = () => {
   return (
     <div id="projects" className="w-full flex flex-col items-center">
-      <h2 className="text-xl lg:text-5xl text-primary">My Projects</h2>
+      <h2 className="text-2xl lg:text-5xl text-primary">My Projects</h2>
       <br />
       <br />
       <div className="flex justify-center flex-col lg:flex-row lg:justify-evenly">

@@ -17,7 +17,7 @@ const Experiences = () => {
 
   return (
     <div id="experiences" className="w-full flex flex-col items-center p-4">
-      <h2 className="text-xl lg:text-5xl text-primary">Life Experiences</h2>
+      <h2 className="text-2xl lg:text-5xl text-primary">Life Experiences</h2>
       <br />
       <br />
       <div className="flex flex-col items-center justify-center">
@@ -52,7 +52,7 @@ const Experiences = () => {
                   transition={{ duration: 0.25 }}
                   exit={{ y: -100, opacity: 0 }}
                 >
-                  <p className="md:text-center lg:text-left md:text-sm lg:text-lg m-2">
+                  <p className="md:text-center lg:text-left md:text-sm lg:text-lg m-2 text-success">
                   During my time at the ranch, I studied Arbinger, which is all about treating people as people and not as objects. I read books such as "Leadership and Self-Deception" and "The Anatomy of Peace" by the Arbinger Institute that really transformed the way I approach my relationships with others. The horse in the pictures above was my horse that I trained all by myself. I named her Izzy. She was a 2-year-old mare when I first got her and had never been saddled or worked with before. After working with her every day for 4 months, I took her on a 9-hour ride up the White Mountains in Arizona. Izzy did an amazing job, and the equine team wanted her to be a beginner horse for other boys who had just started working with horses because of how gentle and easy-going she was. Unfortunately, after I left the ranch, Izzy stopped eating when they tried to feed her. They said she would stand in the corner of the field and look up to where her old stall was, where I used to feed her. Horses are incredible creatures, and I have Izzy to thank for who I am today. Even though I trained her, I learned more from her than she learned from me.
                   </p>
                 </motion.div>
